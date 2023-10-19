@@ -21,7 +21,7 @@ public class ExpenseTrackerModel {
   }
 
   public List<Transaction> getTransactions() {
-    return Collections.unmodifiableList(transactions);
+    return Collections.unmodifiableList(new ArrayList<>(transactions));
   }
 
 }
