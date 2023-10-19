@@ -6,9 +6,9 @@ import java.util.List;
 
 public class Transaction {
 
-  public final double amount;
-  public final String category;
-  public final String timestamp;
+  private final double amount;
+  private final String category;
+  private final String timestamp;
 
   public Transaction(double amount, String category) {
     this.amount = amount;
