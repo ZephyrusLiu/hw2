@@ -6,9 +6,9 @@ import java.util.List;
 
 public class Transaction {
 
-  public double amount;
-  public String category;
-  public String timestamp;
+  public final double amount;
+  public final String category;
+  public final String timestamp;
 
   public Transaction(double amount, String category) {
     this.amount = amount;
@@ -20,16 +20,8 @@ public class Transaction {
     return amount;
   }
 
-  public void setAmount(double amount) {
-    this.amount = amount;
-  }
-
   public String getCategory() {
     return category;
-  }
-
-  public void setCategory(String category) {
-    this.category = category; 
   }
   
   public String getTimestamp() {
