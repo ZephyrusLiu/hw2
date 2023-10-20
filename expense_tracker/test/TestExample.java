@@ -1,5 +1,6 @@
 // package test;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 import java.util.List;
@@ -8,6 +9,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import controller.ExpenseTrackerController;
+import model.AmountFilter;
 import model.ExpenseTrackerModel;
 import model.Transaction;
 import view.ExpenseTrackerView;
@@ -77,4 +79,26 @@ public class TestExample {
         assertEquals(0.00, totalCost, 0.01);
     }
     
+    @Test
+    public void testUndo(){
+        assertEquals(0, model.getTransactions().size());
+    
+        Transaction transaction1 = new Transaction(2.0, "food");
+        Transaction transaction2 = new Transaction(5.0, "travel");
+        Transaction transaction3 = new Transaction(7.0, "entertainment");
+
+        model.addTransaction(transaction1);
+        model.addTransaction(transaction2);
+        model.addTransaction(transaction3);
+
+        int[] transUndo = {1, 2};
+
+        controller.undoTransaction(transUndo);
+        List<Transaction> updatedTransactions = model.getTransactions();
+        assertEquals(1, updatedTransactions.size());
+
+        assertTrue(updatedTransactions.contains(transaction1));
+        assertFalse(updatedTransactions.contains(transaction2));
+        assertFalse(updatedTransactions.contains(transaction3));
+    }
 }

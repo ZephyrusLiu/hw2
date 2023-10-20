@@ -1,0 +1,149 @@
+commit ddf11ef3999dcee64e5665d5de9181b62c5305b8
+Author: Yuqi Liu <yuqliu@umass.edu>
+Date:   Fri Oct 20 17:27:47 2023 -0400
+
+    Yujin update README.md
+
+commit 7ea5ac27f0797c4262582ae2a614c814bb502159
+Author: Yuqi Liu <yuqliu@umass.edu>
+Date:   Fri Oct 20 17:25:00 2023 -0400
+
+    fix bug
+
+commit 82da871dda6a3cdd6ac3bb8a3deebdefafdf4a24
+Author: Yuqi Liu <yuqliu@umass.edu>
+Date:   Fri Oct 20 12:44:00 2023 -0400
+
+    update view and apply filter in app
+
+commit 39dc6725b19aa968bcb5073655f0f6a09727af24
+Author: Yuqi Liu <yuqliu@umass.edu>
+Date:   Fri Oct 20 12:34:25 2023 -0400
+
+    Yujin update filter functionality in model
+
+commit f24c1af2f2bb67a9b974d8c83da23cfb7ed4546a
+Author: Yuqi Liu <yuqliu@umass.edu>
+Date:   Fri Oct 20 12:20:03 2023 -0400
+
+    Yujin add filter method in controller
+
+commit 74d41632a3b27cd833688feda578ddfd624ff04d
+Author: Yuqi Liu <yuqliu@umass.edu>
+Date:   Fri Oct 20 02:57:38 2023 -0400
+
+    update format
+
+commit 9d38d7a0dd5eefd6b6276d27df4ce969fc343a84
+Author: Yuqi Liu <yuqliu@umass.edu>
+Date:   Fri Oct 20 02:42:00 2023 -0400
+
+    Finish undo multiple transactions
+
+commit c2824a1c8f20679075511c87657af7f2b29f1039
+Author: Yuqi Liu <yuqliu@umass.edu>
+Date:   Fri Oct 20 02:14:29 2023 -0400
+
+    finish single undo in MVC and app
+
+commit 909188592d3b1cd818ad129921ec9fea26aab666
+Author: Yuqi Liu <yuqliu@umass.edu>
+Date:   Fri Oct 20 00:14:23 2023 -0400
+
+    update undo button and controller undo method
+
+commit 9d1fbfb453a8bc82a568d9d823cf0d03b6516532
+Author: Yuqi Liu <yuqliu@umass.edu>
+Date:   Thu Oct 19 23:03:07 2023 -0400
+
+    update
+
+commit 233ebbf48c67f7e6cfbf44c60d0a19c6c8d019fb
+Author: Yuqi Liu <yuqliu@umass.edu>
+Date:   Thu Oct 19 23:02:27 2023 -0400
+
+    Yuqi add undo button
+
+commit b987ed637a0b09c0d0eab90305e3f3f318f49deb
+Author: Yuqi Liu <yuqliu@umass.edu>
+Date:   Thu Oct 19 22:38:18 2023 -0400
+
+    Yujin accomplished CategoryFilter and AmountFilter
+
+commit 167d887b501cc9243d665afc74c10faa2464f7d7
+Author: Yuqi Liu <yuqliu@umass.edu>
+Date:   Thu Oct 19 22:32:18 2023 -0400
+
+    Yujin's commit on view
+
+commit a53d5eac6ea12c0a8f294748bc5cc0d451a0912b
+Author: Yuqi Liu <yuqliu@umass.edu>
+Date:   Thu Oct 19 11:41:34 2023 -0400
+
+    cahnge variables from public to private
+
+commit 34552e8f03a7c54239e34061f39760e7cd48abe8
+Author: Yuqi Liu <yuqliu@umass.edu>
+Date:   Thu Oct 19 11:40:59 2023 -0400
+
+    Add final to variable and remove setter functions
+
+commit adc0f53fb050042a4ee38395fc806431e6f4b151
+Author: Yuqi Liu <yuqliu@umass.edu>
+Date:   Thu Oct 19 11:37:17 2023 -0400
+
+    Apply immutability on the list of transactions.
+
+commit d2c58088bb1ad44092de07e321d77fdd4d93020d
+Author: Yuqi Liu <yuqliu@umass.edu>
+Date:   Thu Oct 19 11:33:47 2023 -0400
+
+    Apply encapsulation for the list of transactions.
+
+commit 8aa09ad82b597bad737ac389fcdb89e1d77ef9b1
+Author: Yuqi Liu <yuqliu@umass.edu>
+Date:   Thu Oct 19 10:41:43 2023 -0400
+
+    comet out jdoc in .gitignore
+
+commit 3a0ce56b3b33bbeb7ad317499086464122071417
+Author: Yuqi Liu <yuqliu@umass.edu>
+Date:   Thu Oct 19 10:23:22 2023 -0400
+
+    Fix error in readme
+
+commit 604fb9467093bb374276e828374f9aebda57539a
+Author: Yuqi Liu <yuqliu@umass.edu>
+Date:   Tue Oct 17 09:28:19 2023 -0400
+
+    Add jUint test to lib
+
+commit b21da9fb7fd47c25881d7fc014a932365cb1552b
+Author: Mahbuba Tasmin <tasmin153@gmail.com>
+Date:   Sat Sep 2 02:42:57 2023 -0400
+
+    Build file update
+
+commit ccabaffc7ff1b7098979a63fcbadf48bc04915c3
+Author: Mahbuba Tasmin <tasmin153@gmail.com>
+Date:   Tue Aug 29 14:49:22 2023 -0400
+
+    File Update
+
+commit 2574c71001a74c29f01f4a84fa99f450158f2f10
+Author: Mahbuba Tasmin <tasmin153@gmail.com>
+Date:   Wed Aug 9 14:11:14 2023 -0400
+
+    Total Cost and Serial update
+
+commit d29d2c8acb4145ce700e0456ccc334da0cad3dc2
+Author: Mahbuba Tasmin <tasmin153@gmail.com>
+Date:   Wed Aug 9 12:54:46 2023 -0400
+
+    HW2 template files
+
+commit 6a51d8019c39a33d581ce078ae8887a022ee806d
+Author: Mahbuba Tasmin <tasmin153@gmail.com>
+Date:   Tue Aug 8 21:48:41 2023 -0400
+
+    Initial commit
