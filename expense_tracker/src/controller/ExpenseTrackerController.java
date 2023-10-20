@@ -55,7 +55,7 @@ public class ExpenseTrackerController {
     // Get transaction list
     List<Transaction> transactions = model.getTransactions();
     // Make sure selected legal row(s) 
-    if (selectedRows[0] >= 0 && selectedRows.length < transactions.size()) {
+    if (selectedRows[0] >= 0 && selectedRows.length <= transactions.size()) {
 
       // remove all the rows
       for(int selectedRow : selectedRows){
