@@ -14,7 +14,6 @@ public class AmountFilter implements TransactionFilter {
 
     @Override
     public List<Transaction> filter(List<Transaction> transactionList) {
-        // 不知道这里能不能用arraylist
         List<Transaction> newList = new ArrayList<>();
 
         for (Transaction transaction : transactionList) {
