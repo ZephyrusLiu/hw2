@@ -33,6 +33,9 @@ public class ExpenseTrackerView extends JFrame {
   private JFormattedTextField lowerAmountField;
   private JFormattedTextField upperAmountField;
 
+  // Add undo button
+  private JButton undoButton;
+
   public ExpenseTrackerView() {
     setTitle("Expense Tracker"); // Set title
     setSize(600, 400); // Make GUI larger
@@ -54,6 +57,24 @@ public class ExpenseTrackerView extends JFrame {
 
     // Create table
     transactionsTable = new JTable(model);
+
+    //
+    //
+    //Yuqi accomplish undo button
+    //
+    //
+    undoButton = new JButton("Undo");
+    JPanel buttonPanel = new JPanel();
+
+    buttonPanel.add(undoButton);
+
+    // Set eventlistener
+    undoButton.addActionListener(new ActionListener() {
+      @Override
+      public void actionPerformed(ActionEvent e) {
+        
+      }
+    });
 
     //
     //
@@ -89,7 +110,6 @@ public class ExpenseTrackerView extends JFrame {
     inputPanel.add(categoryField);
     inputPanel.add(addTransactionBtn);
 
-    JPanel buttonPanel = new JPanel();
     buttonPanel.add(addTransactionBtn);
 
     // Yujin wrote: Add Filter panel right under input panel.
