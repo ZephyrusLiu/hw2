@@ -67,14 +67,7 @@ public class ExpenseTrackerView extends JFrame {
     JPanel buttonPanel = new JPanel();
 
     buttonPanel.add(undoButton);
-
-    // Set eventlistener
-    undoButton.addActionListener(new ActionListener() {
-      @Override
-      public void actionPerformed(ActionEvent e) {
-        
-      }
-    });
+    
 
     //
     //
@@ -233,5 +226,10 @@ public class ExpenseTrackerView extends JFrame {
 
   public void setUpperAmountField(JFormattedTextField amountField) {
     this.amountField = amountField;
+  }
+
+  // Add button.
+  public JButton getUndoButton() {
+    return undoButton;
   }
 }

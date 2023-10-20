@@ -3,6 +3,8 @@ package controller;
 import view.ExpenseTrackerView;
 
 import java.util.List;
+import javax.swing.table.DefaultTableModel;
+
 
 
 
@@ -46,4 +48,33 @@ public class ExpenseTrackerController {
   }
   
   // Other controller methods
+  // Get selected transaction.
+  // private Transaction getSelectedTransactionFromView() {
+  //   // Get selected row in JTable 
+  //   int selectedRowIndex = view.getTransactionsTable().getSelectedRow();
+
+  //   // Check if any row is selected
+  //   if (selectedRowIndex != -1) {
+  //       // Get model
+  //       DefaultTableModel tableModel = view.getTableModel();
+
+  //       // Get row data
+  //       double amount = (Double) tableModel.getValueAt(selectedRowIndex, 1); 
+  //       String category = (String) tableModel.getValueAt(selectedRowIndex, 2); 
+
+  //       // use 
+  //       Transaction selectedTransaction = new Transaction(amount, category);
+
+  //       return selectedTransaction;
+  //   }
+
+  //   // 如果没有选定行，返回 null
+  //   return null;  
+
+  // }
+  // // Undo function
+  // private void undoTransaction(Transaction transaction) {
+  //   model.removeTransaction(transaction);
+  //   refresh();
+  // }
 }
