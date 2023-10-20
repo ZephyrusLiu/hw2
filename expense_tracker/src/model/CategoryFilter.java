@@ -14,9 +14,8 @@ public class CategoryFilter implements TransactionFilter {
     @Override
     public List<Transaction> filter(List<Transaction> transactionList) {
         List<Transaction> newList = new ArrayList<>();
-
         for (Transaction transaction : transactionList) {
-            if (transaction.getCategory() == category) {
+            if (transaction.getCategory().equals(category)) {
                 newList.add(transaction);
             }
         }
