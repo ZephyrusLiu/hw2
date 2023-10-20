@@ -34,6 +34,14 @@ public class ExpenseTrackerApp {
       }
     });
 
+    // Handle undo transaction.
+    view.getUndoButton().addActionListener(e -> {
+      int selectedRow = view.getTransactionsTable().getSelectedRow();
+      if (selectedRow != -1) {
+        controller.undoTransaction(selectedRow);
+        // JOptionPane.showMessageDialog(view, selectedRow);
+      }
+    });
   }
 
 }
