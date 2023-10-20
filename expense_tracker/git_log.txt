@@ -1,3 +1,21 @@
+commit bdc41bcecfcce1c3d4dfc90580eaba573c5f192a
+Author: Yuqi Liu <yuqliu@umass.edu>
+Date:   Fri Oct 20 18:24:35 2023 -0400
+
+    update jdoc
+
+commit 07c4e0329e8b57083fa6fa0c4c5d47f067045884
+Author: Yuqi Liu <yuqliu@umass.edu>
+Date:   Fri Oct 20 18:19:05 2023 -0400
+
+    rename gitlog
+
+commit c91ae8ba13ac2aed48e78164f970de966cbec3a4
+Author: Yuqi Liu <yuqliu@umass.edu>
+Date:   Fri Oct 20 18:18:26 2023 -0400
+
+    update test, jdoc and gitlog.txt
+
 commit ddf11ef3999dcee64e5665d5de9181b62c5305b8
 Author: Yuqi Liu <yuqliu@umass.edu>
 Date:   Fri Oct 20 17:27:47 2023 -0400
