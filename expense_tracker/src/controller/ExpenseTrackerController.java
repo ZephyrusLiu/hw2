@@ -59,9 +59,8 @@ public class ExpenseTrackerController {
       for(int selectedRow : selectedRows){
         Transaction selectedTransaction = transactions.get(selectedRow);
         model.removeTransaction(selectedTransaction);
-
       }
-
+      
       // Refresh after all the removal
       view.refreshTable(model.getTransactions());
     }
