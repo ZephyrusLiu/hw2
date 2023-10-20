@@ -228,6 +228,12 @@ public class ExpenseTrackerView extends JFrame {
     this.amountField = amountField;
   }
 
+  // Get catefory
+  public String getSelectedCategory() {
+    String selectedCategory = (String) CategoryBox.getSelectedItem();
+    return selectedCategory;
+  
+  }
   // Add button.
   public JButton getUndoButton() {
     return undoButton;

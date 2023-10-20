@@ -2,6 +2,8 @@ import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
 import controller.ExpenseTrackerController;
+import model.AmountFilter;
+import model.CategoryFilter;
 import model.ExpenseTrackerModel;
 import view.ExpenseTrackerView;
 import model.Transaction;
@@ -41,6 +43,29 @@ public class ExpenseTrackerApp {
       if (selectedRows[0] >= 0) {
         // Apply undo in controller
         controller.undoTransaction(selectedRows);
+      }
+    });
+
+    // Yujin
+    view.getAddFilterAmountBtn().addActionListener(e -> {
+      double lower = view.getLowerAmountField();
+      double upper = view.getUpperAmountField();
+      AmountFilter amf = new AmountFilter(lower, upper);
+      boolean filtered = controller.applyFilter(amf);
+      if (!filtered) {
+        JOptionPane.showMessageDialog(view, "No such transactions.");
+        view.toFront();
+      }
+    });
+
+    // Yujin
+    view.getAddFilterCategoryBtn().addActionListener(e -> {
+      String category = view.getSelectedCategory();
+      CategoryFilter cf = new CategoryFilter(category);
+      boolean filtered = controller.applyFilter(cf);
+      if (!filtered) {
+        JOptionPane.showMessageDialog(view, "No such transactions.");
+        view.toFront();
       }
     });
   }
