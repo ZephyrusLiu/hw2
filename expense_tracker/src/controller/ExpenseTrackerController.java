@@ -3,13 +3,15 @@ package controller;
 import view.ExpenseTrackerView;
 
 import java.util.List;
-import javax.swing.table.DefaultTableModel;
 
-
-
+import javax.swing.JTable;
+import javax.swing.table.DefaultTableCellRenderer;
 
 import model.ExpenseTrackerModel;
 import model.Transaction;
+import model.TransactionFilter;
+import java.awt.Color;
+
 public class ExpenseTrackerController {
   
   private ExpenseTrackerModel model;
@@ -63,6 +65,38 @@ public class ExpenseTrackerController {
       
       // Refresh after all the removal
       view.refreshTable(model.getTransactions());
+    }
+  }
+  
+  // Yujin Wrote
+  // Other controller methods
+  public boolean applyFilter(TransactionFilter transactionFilter) {
+    List<Transaction> list = model.getTransactions();
+    List<Transaction> newList = transactionFilter.filter(list);
+    refresh();
+    JTable transactionsTable = view.getTransactionsTable();
+    int count = 0;
+    for (int i = 0; i < list.size(); i++) {
+      for (int j = 0; j < newList.size(); j++) {
+        if (list.get(i).getAmount() == newList.get(j).getAmount()
+            && list.get(i).getCategory() == newList.get(j).getCategory()
+            && list.get(i).getTimestamp() == newList.get(j).getTimestamp()) {
+          transactionsTable.addRowSelectionInterval(i, i);
+          count += 1;
+        }
+      }
+    }
+    transactionsTable.setSelectionForeground(Color.BLACK);
+    transactionsTable.setBackground(Color.WHITE);
+    transactionsTable.setSelectionBackground(new Color(173, 255, 168));
+    transactionsTable.updateUI();
+    
+
+    if (count == newList.size()){
+      return true;
+    }
+    else{
+      return false;
     }
   }
 }
