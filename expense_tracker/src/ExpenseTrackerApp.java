@@ -36,10 +36,11 @@ public class ExpenseTrackerApp {
 
     // Handle undo transaction.
     view.getUndoButton().addActionListener(e -> {
-      int selectedRow = view.getTransactionsTable().getSelectedRow();
-      if (selectedRow != -1) {
-        controller.undoTransaction(selectedRow);
-        // JOptionPane.showMessageDialog(view, selectedRow);
+      int[] selectedRows = view.getTransactionsTable().getSelectedRows();
+      // Make sure row is legal
+      if (selectedRows[0] >= 0) {
+        // Apply undo in controller
+        controller.undoTransaction(selectedRows);
       }
     });
   }

@@ -49,11 +49,20 @@ public class ExpenseTrackerController {
   
   // Other controller methods
   // Undo function
-  public void undoTransaction(int selectedRow) {
+  public void undoTransaction(int[] selectedRows) {
+    // Get transaction list
     List<Transaction> transactions = model.getTransactions();
-    if (selectedRow >= 0 && selectedRow < transactions.size()) {
-      Transaction selectedTransaction = transactions.get(selectedRow);
-      model.removeTransaction(selectedTransaction);
+    // Make sure selected legal row(s) 
+    if (selectedRows[0] >= 0 && selectedRows.length < transactions.size()) {
+
+      // remove all the rows
+      for(int selectedRow : selectedRows){
+        Transaction selectedTransaction = transactions.get(selectedRow);
+        model.removeTransaction(selectedTransaction);
+
+      }
+
+      // Refresh after all the removal
       view.refreshTable(model.getTransactions());
     }
   }
